@@ -1,0 +1,36 @@
+@import url("fatsecret.css");
+$darkBlue: #033769;
+
+#calculator {
+  margin:0 auto;
+  //margin-left: auto;
+  //margin-top: auto;
+  border-color: white;
+  border-style: outset;
+  height: 500px;
+  width: 600px;
+  border-width: 2px;
+  margin-bottom: 100px;
+}
+
+#navbarTopContainer{
+  background-color: $darkBlue;
+}
+
+#tdeeTab{
+  color: white;
+  font-weight:bold;
+  font-family: Candara, Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#caloriesTopTab{
+  @extend #tdeeTab;
+}
+
+.sticky-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $darkBlue;
+  color: white;
+}

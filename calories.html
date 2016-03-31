@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="http://platform.fatsecret.com/js?key=a68b5955dfe744d994bf3d84ae636a62&auto_load=false"></script>
+<script src="dist/bundle.js"></script>
+<script src="js/chart.js/Chart.js"></script>
+<link rel="stylesheet" type="text/css" href="style/css/main.css">
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<title>To do app</title>
+</head>
+
+<body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  <nav class="navbar navbar-inverse" id="navbarTop">
+    <div class="container-fluid" id=navbarTopContainer>
+      <ul class="nav navbar-nav">
+        <li id="tdeeTab"><a href="#">Tdee Calculator</a></li>
+        <li class="active" id="caloriesTopTab"><a href="#">Calories</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="chartCountainer">
+    <input type="button" class="btn btn-default" id="fatsecretButton" value="Add"/>
+    <canvas id="myChart" width="0" height="0" ></canvas>
+  </div>
+  <div id="my_container" class="fatsecret_container" >
+  </div>
+
+  <script>
+  // usar template pois o chartFatSecret.js nao consegue reconhecer o botao nesse arquivo
+  fatsecret.setContainer("my_container");
+  fatsecret.setCanvas("home");
+  fatsecret.variables.navOptions = fatsecret.navFeatures.home | fatsecret.navFeatures.food_diary;
+  </script>
+
+
+  <div class="sticky-footer" >Made by gmmoraes</div>
+
+
+</body>
+</html>
